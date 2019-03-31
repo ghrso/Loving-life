@@ -77,8 +77,8 @@ int Escolha(int tam , char frase[],char escolha1[], char escolha2[], char escolh
 	if(escolha < 1 || escolha > tam){
 		printf("Escolha invalida\n");
 
-		if(Escolha(2, "Tentar novamente?", "1. SIM\n", "2. NAO\n", "","","") == 1)
-			return Escolha(3, "Qual tipo de Login deseja realizar?", "1. Administrador\n", "2. Usuario\n", "3. Sair\n","","");
+		if(Escolha(2, "Tentar novamente?", "1. SIM\n", "2. NAO\n", "","","") == 2)
+			return 0;
 	}
 	else
 		return escolha;
